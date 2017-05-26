@@ -1,0 +1,123 @@
+refrigerador
+package Refrigerador;
+
+public class refrigerador {
+
+	int cantidad;
+	
+	refrigerador ( int cantidad){
+		this. cantidad = cantidad;}
+
+	
+	
+	
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+}
+
+package Refrigerador;
+
+public class huevos {
+
+int cantidad;
+
+public huevos (int cantidad){
+	this.cantidad = cantidad;}
+
+public int getCantidad() {
+	return cantidad;
+}
+
+public void setCantidad(int cantidad) {
+	this.cantidad = cantidad;
+}
+
+
+
+}
+package Refrigerador;
+
+public class jamon {
+
+	int cantidad;
+
+	public jamon (int cantidad){
+		this.cantidad = cantidad;}
+	
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+
+	
+}
+package Refrigerador;
+
+public class leche {
+
+	int cantidad;
+
+	public leche (int cantidad){
+		this.cantidad = cantidad;}
+	
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+	
+	
+}
+package Refrigerador;
+
+public class queso {
+
+	int cantidad;
+
+	public queso (int cantidad){
+		this.cantidad = cantidad;}
+	
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+	
+	
+}
+package Refrigerador;
+
+public class principal {
+
+	public static void main (String args[]){
+		
+		huevos huevos = new huevos (12);
+		jamon jamon = new jamon (1);
+		leche leche = new leche (2);
+		queso queso = new queso (1);
+		
+		System.out.println("hay en el refigerador "+huevos.getCantidad()+" huevos");
+		
+		System.out.println("y "+jamon.getCantidad()+ " kg de jamon");
+		
+		System.out.println("y "+leche.getCantidad()+" leches");
+		
+		System.out.println("y "+queso.getCantidad()+ " kg de queso");
+		
+		System.out.println("ya no hay cervezas");
+		
+	}
+	
+}
