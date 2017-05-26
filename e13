@@ -1,0 +1,170 @@
+aeropuerto
+package Aeropuerto;
+
+public class aeropuerto {
+
+
+		int cantidad;
+		String vuelo;
+		String reparacion;
+		String tierra;
+		
+		
+		aeropuerto ( int cantidad, String vuelo ,String reparacion,String tierra){
+			this. cantidad = cantidad;
+			this. vuelo = vuelo;
+			this. tierra = tierra;
+			this. reparacion = reparacion;
+			
+		}
+
+
+		public int getCantidad() {
+			return cantidad;
+		}
+
+
+		public void setCantidad(int cantidad) {
+			this.cantidad = cantidad;
+		}
+
+
+		public String getVuelo() {
+			return vuelo;
+		}
+
+
+		public void setVuelo(String vuelo) {
+			this.vuelo = vuelo;
+		}
+
+
+		public String getReparacion() {
+			return reparacion;
+		}
+
+
+		public void setReparacion(String reparacion) {
+			this.reparacion = reparacion;
+		}
+
+
+		public String getTierra() {
+			return tierra;
+		}
+
+
+		public void setTierra(String tierra) {
+			this.tierra = tierra;
+		}
+
+
+
+
+}
+package Aeropuerto;
+
+public class avion {
+
+	int cantidad;
+	String tierra;
+	
+	public avion (int cantidad,String tierra){
+		this.cantidad = cantidad;
+		this.tierra = tierra;}
+	
+	public int getCantidad() {
+		return cantidad;
+	}
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+	public String getTierra() {
+		return tierra;
+	}
+	public void setTierra(String tierra) {
+		this.tierra = tierra;
+	}
+
+	
+	}
+	
+	
+
+package Aeropuerto;
+
+public class avioneta {
+
+	int cantidad;
+	String reparacion;
+	
+	public avioneta (int cantidad,String reparacion){
+		this.cantidad = cantidad;
+		this.reparacion = reparacion;}
+	
+	public int getCantidad() {
+		return cantidad;
+	}
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+	public String getReparacion() {
+		return reparacion;
+	}
+	public void setReparacion(String reparacion) {
+		this.reparacion = reparacion;
+	}
+	
+	
+}
+package Aeropuerto;
+
+public class helicoptero {
+
+	int cantidad;
+	String vuelo;
+	
+	
+	
+	public helicoptero (int cantidad,String vuelo){
+		this.cantidad = cantidad;
+		this.vuelo = vuelo;}
+	
+	public int getCantidad() {
+		return cantidad;
+	}
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+	public String  getvuelo() {
+		return vuelo;
+	}
+	public void setvuelo(String vuelo) {
+		this.vuelo = vuelo;
+	}
+	
+	
+}
+package Aeropuerto;
+
+
+public class principal {
+
+	public static void main (String args[]){
+		
+		helicoptero helicoptero =  new helicoptero (2,"vuelo");
+		avion avion = new avion (1,"tierra");
+		avioneta avioneta = new avioneta(1,"reparacion");
+	
+		System.out.println("hay:" +helicoptero.getCantidad() +  " helicopteros" + " en:"+helicoptero.getvuelo());
+		
+		System.out.println("hay:" +avion.getCantidad() + " avion" + " en:"+avion.getTierra());
+				
+				System.out.println("hay:" +avioneta.getCantidad() + " avioneta" + " en:"+avioneta.getReparacion());
+
+		}
+				
+	
+	
+	}
+
