@@ -1,0 +1,35 @@
+package arreglos;
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+public class arreglos1 {
+
+	public static void main(String args[]){
+		Scanner sc = new Scanner (System.in);
+		
+	System.out.println("programa para multiplicar");
+
+	try {
+		
+		
+		int multiplicando,multiplicador,resultado;
+		System.out.println("digite el multiplicando");
+		multiplicando = sc.nextInt();
+		System.out.println("digite el multiplicador");
+		multiplicador = sc.nextInt();
+		resultado = multiplicando*multiplicador;
+		System.out.println("el resultado es "+resultado);
+	
+	}catch (InputMismatchException ime){
+		System.out.println("debe digitar solamente numeros enteros");
+	}	finally{
+		System.out.println("muchas gracias hasta luego");
+		
+			}
+		}
+	
+
+	
+	
+	}
+
