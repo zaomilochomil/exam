@@ -1,0 +1,21 @@
+package exam;
+
+	import java.util.Scanner;
+	public class e1 {
+	    public static void main(String[] args) {
+	        Scanner in=new Scanner (System.in);
+	        System.out.println("Introduzca dos letras");
+	        char l1=in.next().charAt(0);
+	        char l2=in.next().charAt(0);
+	        int aux=(int)l1;
+	        int aux2=(int)l2;
+	        if(aux<=aux2)
+	        {
+	            System.out.println("Esta en orden.");
+	        }
+	        else
+	        {
+	            System.out.println("No esta en orden.");
+	        }
+	    }   
+	}
