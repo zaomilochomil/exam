@@ -1,0 +1,13 @@
+package exam;
+
+	import java.util.Scanner;
+	public class e3 {
+	    public static void main(String[] args) {
+	        Scanner leer= new Scanner(System.in);
+	        System.out.println("Cuantos metros nececita?");
+	        double CM=leer.nextInt();
+	        double PG=CM*3937.007874016;
+	        System.out.println("Pida "+PG+" pulgadas");
+	    }
+	}
+
