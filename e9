@@ -1,0 +1,36 @@
+package arreglos;
+	import java.util.Scanner;
+import java.util.InputMismatchException;
+
+	public class arreglos2 {
+
+		public static void main(String args[]){
+			Scanner sc = new Scanner (System.in);
+			
+		System.out.println("programa para sacar raiz cuadrada");
+
+		try {
+			
+			
+			int numero;
+			double resultado;
+			System.out.println("digite el numero del q se quiera saber la raiz");
+			numero = sc.nextInt();
+			resultado = Math.sqrt(numero);
+			System.out.println("la raiz cuadrada es "+resultado);
+		
+		}catch (InputMismatchException ime){
+			System.out.println("debe digitar solamente numeros enteros");
+		}	finally{
+			System.out.println("muchas gracias hasta luego");
+			
+				}
+			}
+		
+
+		
+		
+		}
+
+
+
