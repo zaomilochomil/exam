@@ -1,0 +1,25 @@
+package exam;
+
+import java.util.Scanner;
+public class e2 {
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+        double C1,C2,C3,C4,S,P;
+        System.out.println("Coloque la primera calificacion:");
+        C1=leer.nextDouble();
+        System.out.println("Coloque la segunda calificacion:");
+        C2=leer.nextDouble();
+        System.out.println("Coloque la tercera calificacion:");
+        C3=leer.nextDouble();
+        System.out.println("Coloque la cuarta calificacion:");
+        C4=leer.nextDouble();
+        S=C1+C2+C3+C4;
+        P=S/4;
+        System.out.println("Su promedio obtenido es de: "+P);
+    }
+}
+
+
+
+
+
