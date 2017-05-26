@@ -1,0 +1,21 @@
+package exam;
+import java.util.Scanner;
+
+public class e5{
+    public static void main(String[] args) {
+        Scanner leer= new Scanner(System.in);
+        int l;
+        double PG,TG,GA;
+        System.out.println("Cuantos litros produce?");
+        l=leer.nextInt();
+        System.out.println("Cuanto cuesta el galon?");
+        PG = leer.nextDouble();
+        TG=l/3.785;
+        GA=PG*TG;
+        System.out.println("La ganancia es de: "+GA);
+    }
+}
+
+
+
+
