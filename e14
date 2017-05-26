@@ -1,0 +1,152 @@
+vegetal
+package Vegetal;
+
+public class vegetal {
+	public class pricipal {
+
+		int cantidad;
+		String color;
+		
+		pricipal ( int cantidad, String  color ){
+			this. cantidad = cantidad;
+			this. color = color;
+			
+		}
+
+		public int getCantidad() {
+			return cantidad;
+		}
+
+		public void setCantidad(int cantidad) {
+			this.cantidad = cantidad;
+		}
+
+		public String getColor() {
+			return color;
+		}
+
+		public void setColor(String color) {
+			this.color = color;
+		}
+
+
+		
+		}
+		}
+
+
+
+package Vegetal;
+
+public class cebolla {
+
+	int cantidad;
+	String color;
+	
+	public cebolla (int cantidad,String color){
+		this.cantidad = cantidad;
+		this.color = color;}
+	
+	public int getCantidad() {
+		return cantidad;
+	}
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+	
+}
+package Vegetal;
+
+public class tomate {
+int cantidad;
+String color;
+
+public tomate (int cantidad,String color){
+	this.cantidad = cantidad;
+	this.color = color;
+}
+
+@Override
+public String toString() {
+	// TODO Auto-generated method stub
+	return super.toString();
+}
+
+public int getCantidad() {
+	return cantidad;
+}
+public void setCantidad(int cantidad) {
+	this.cantidad = cantidad;
+}
+public String getColor() {
+	return color;
+}
+public void setColor(String color) {
+	this.color = color;
+}
+
+	
+}
+package Vegetal;
+
+public class zanahoria {
+
+	int cantidad;
+	String color;
+	
+	public zanahoria (int cantidad,String color){
+		this.cantidad = cantidad;
+		this.color = color;}
+	
+	public int getCantidad() {
+		return cantidad;
+	}
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+	
+	
+}
+package Vegetal;
+
+public class pricipal {
+	public static void main (String args[]){ 
+	
+		tomate tomate = new tomate (2,"rojo");
+		cebolla cebolla = new cebolla (1,"blanco");
+		zanahoria zanahoria = new zanahoria (3,"naranja");
+	
+		System.out.println("tengo:" +tomate.getCantidad()+ "tomates" + "y es de color:"+tomate.getColor());
+		
+		System.out.println("tengo:" +cebolla.getCantidad()+ "cebolla" + "y es de color:"+cebolla.getColor());
+				
+				System.out.println("tengo:" +zanahoria.getCantidad()+"zanahoria" + "y es de color:"+zanahoria.getColor());
+
+		}
+				
+	
+	}
