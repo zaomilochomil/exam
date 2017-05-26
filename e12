@@ -1,0 +1,36 @@
+package arreglos;
+	import java.util.Scanner;
+	import java.util.InputMismatchException;
+
+	public class arreglos5{
+		public static void main(String args[]){
+		Scanner sc = new Scanner (System.in);
+		
+	System.out.println("programa para derivar");
+			
+
+	try {
+		
+		
+		int numero,exponente,resultado1,resultado2;
+		System.out.println("digite el numero");
+		numero = sc.nextInt();
+		System.out.println("x");
+		System.out.println("digite el exponente");
+		exponente = sc.nextInt();
+		resultado1 = numero*exponente;
+		resultado2 = exponente-1;
+		System.out.println("el resultado es "+resultado1+"x"+resultado2);
+	
+	}catch (InputMismatchException ime){
+		System.out.println("debe digitar solamente numeros enteros");
+	}	finally{
+		System.out.println("muchas gracias hasta luego");
+		
+			}
+		}
+
+		
+		}
+	
+
