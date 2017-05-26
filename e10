@@ -1,0 +1,36 @@
+package arreglos;
+
+	import java.util.Scanner;
+import java.util.InputMismatchException;
+
+	public class arreglos3{
+		
+
+		public static void main(String args[]){
+		Scanner sc = new Scanner (System.in);
+		
+	System.out.println("programa para sumar");
+			
+
+	try {
+		
+		
+		int numero1, numero2,resultado;
+		System.out.println("digite un numero");
+	    numero1 = sc.nextInt();
+		System.out.println("digite otro numero");
+		numero2 = sc.nextInt();
+		resultado = numero1+numero2;
+		
+		System.out.println("el resultado es "+resultado);
+	
+	}catch (InputMismatchException ime){
+		System.out.println("debe digitar solamente numeros enteros");
+	}	finally{
+		System.out.println("muchas gracias hasta luego");
+		
+			}
+		}
+	}
+
+
