@@ -1,0 +1,23 @@
+package exam;
+import java.util.Scanner;
+public class e4 {
+    public static void main(String[] args) {
+        Scanner leer=new Scanner(System.in);
+        double x1,x2,y1,y2,x,y,d;
+        System.out.println("Coloque el valor de x1");
+        x1=leer.nextDouble();
+        System.out.println("Coloque el valor de x2");
+        x2=leer.nextDouble();
+        System.out.println("Coloque el valor de y1");
+        y1=leer.nextDouble();
+        System.out.println("Coloque el valor de y2");
+        y2=leer.nextDouble();
+        x=x2-x1;
+        y=y2-y1;
+        d=Math.sqrt(Math.pow(x, 2)+Math.pow(y, 2));
+        System.out.println("La distancia entre los puntos es: "+d);
+    }
+}
+
+
+
